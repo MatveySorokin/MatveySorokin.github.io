@@ -118,7 +118,8 @@ td {
 }
 
 .w-50 {
-  width: 50%;
+  width: 100%;
+  text-align: center;
 }
 
 .mx-auto {
