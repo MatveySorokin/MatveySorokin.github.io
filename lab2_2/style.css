@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-size: cover;
+  background: url(img/pic1.jpg) no-repeat;
+}
+
+.container {
+  position: absolute;
+}
+
+.auth__block {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding-left: 40px;
+  padding-top: 50px;
+  text-align: left;
+  width: 250px;
+  height: 250px;
+  color: white;
+  background-color: darkblue;
+  border: 2px white solid;
+  border-radius: 10px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin: -50px 0 0 -100px;
+}
+
+.auth__block input {
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.auth__block p {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.radio__btn {
+  margin-bottom: 10px;
+}
+
+.auth__block button {
+  width: 165px;
+  height: 20px;
+  color: white;
+  background: burlywood;
+  border-radius: 5px;
+  margin: 0 auto;
+  border: none;
+  font-weight: bold;
+}
+
+button:active {
+  transform: translateY(1px);
+}

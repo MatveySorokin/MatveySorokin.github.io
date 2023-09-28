@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Форма обратной связи</title>
+  </head>
+  <body>
+    <h1>Форма обратной связи</h1>
+    <form
+      method="post"
+      action="https://httpbin.org/post"
+      enctype="multipart/form-data"
+    >
+      <input type="hidden" name="user_id" value="5" />
+
+      <div>
+        <label for="fio"><b>ФИО</b><br /></label>
+        <input
+          style="color: grey"
+          type="text"
+          id="fio"
+          name="fio"
+          placeholder="Введите ФИО"
+        />
+        <!--value="Ваше имя"-->
+      </div>
+      <div>
+        <label for="email"><b>Адрес электронной почты</b><br /></label>
+        <input
+          style="color: grey"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Введите email"
+          required
+        />
+        <!--value="Введите email"-->
+      </div>
+      <legend><b>Откуда вы узнали о нас?</b></legend>
+      <fieldset style="width: 150px; display: inline">
+        <div>
+          <input
+            type="radio"
+            name="source"
+            id="friends"
+            value="friends"
+            checked
+          />
+          <label for="friends">Друзья</label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            name="source"
+            id="advertising"
+            value="advertising"
+          />
+          <label for="advertising">Реклама</label>
+        </div>
+      </fieldset>
+      <div>
+        <label for="msg_type"><b>Тип обращения</b><br /></label>
+        <select name="msg_type" id="msg_type">
+          <option value="1" selected>Жалоба</option>
+          <option value="2">Предложение</option>
+        </select>
+      </div>
+      <label for="msg"><b>Текст сообщения</b></label>
+      <div>
+        <textarea name="msg" id="msg" cols="30" rows="10">
+  Текст по умолчанию</textarea
+        >
+      </div>
+      <div>
+        <label for="attachment"><b>Вложение</b><br /></label>
+        <input type="file" name="attachment" id="attachment" />
+      </div>
+      <div>
+        <input type="checkbox" name="agree" id="agree" value="agree" required />
+        <label for="agree"
+          >Согласен с правилами обработки персональных данных.</label
+        >
+      </div>
+      <button class="send__btn" type="submit">Отправить</button>
+    </form>
+  </body>
+</html>
